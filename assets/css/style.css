@@ -1,96 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300&display=swap');
 body {
-    background-image: url(https://f.playcode.io/learn/css-cafe/beans.jpg);
-    font-family: sans-serif;
-    padding: 20px;
-  }
+  background-image: url(../images/coffee.jpg);
+  font-family: 'Urbanist', sans-serif;
+  color: white;
+  padding: 20px;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 60px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-weight: 900;
+}
+
+h2 {
+  position: absolute;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 35px;
+  text-decoration: 4px underline;
+  text-underline-position: under;
+  padding: 10px;
+  margin: 10px;
+}
+
+.established {
+  font-style: italic;
+  font-size: 30px;
+}
+
+h1, h2, h3, p {
+  text-align: center;
+}
+
+p{
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+h3, .price {
+color:  #c4b2ab;
+}
+
+.price {
+font-weight: bold;
+}
+.menu {
+  height: 350px;
+  display: flex;
+}
+
+.menu-title {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding-left: 56px;
+}
+
+.coffee, .dessert {
+  position: relative;
+  width: 370px;
+  height: 300px;
+  background-color:  rgba(0,0,0,.4);
+  border-radius: 12px;
+  margin: 0 36px;
+  word-wrap: break-word;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 453px;
+}
+
+.container-coffee-title img {
+  left: 427px;
+}
   
-  h1 {
-    font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 15px;
+/* FOOTER */
+
+footer {
+  font-size: 25px;
+}
+
+.address {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 1450px){
+  .coffee, .dessert {
+    height: 350px;
   }
-  
-  h2 {
-    font-size: 30px;
-  }
-  
-  .established {
-    font-style: italic;
-  }
-  
-  h1, h2, p {
-    text-align: center;
-  }
-  
+}
+
+@media (max-width: 600px){
   .menu {
-    width: 80%;
-    background-color: burlywood;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    max-width: 500px;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
   }
-  
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -25px;
-  }
-  
-  hr {
-    height: 2px;
-    background-color: brown;
-    border-color: brown;
-  }
-  
-  .bottom-line {
-    margin-top: 25px;
-  }
-  
-  h1, h2 {
-    font-family: Impact, serif;
-  }
-  
-  .item p {
-    display: inline-block;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 18px;
-  }
-  
-  .flavor, .dessert {
-    text-align: left;
-    width: 75%;
-  }
-  
-  .price {
-    text-align: right;
-    width: 25%;
-  }
-  
-  /* FOOTER */
-  
-  footer {
-    font-size: 14px;
-  }
-  
-  .address {
-    margin-bottom: 5px;
-  }
-  
-  a {
-    color: black;
-  }
-  
-  a:visited {
-    color: black;
-  }
-  
-  a:hover {
-    color: brown;
-  }
-  
-  a:active {
-    color: brown;
-  }
+}
